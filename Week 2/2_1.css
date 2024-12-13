@@ -1,0 +1,71 @@
+/*
+스타일 규칙 
+(선택자){
+  (속성): (속성값);
+}
+
+선택자
+* 전체 선택자
+ol 태그 선택자
+.test1 클래스 선택자
+#box_test 아이디 선택자
+form, div 다중 선택자
+
+복합 선택자
+form div 하위 선택자 : 포함관계를 가질 때 부모요소에 포함된 모든 하위요소
+form > div 자식 선택자 : 포함관계를 가질 때 부모요소에 포함된 바로 아래의 하위요소
+form + div 인접형제 선택자 : 같은 부모요소를 가지는 요소 중 바로 아래의 하위요소
+form ~ div 일반 형제 선택자 : 같은 부모요소를 가지는 요소 중 바로 모든 하위요소
+
+가상클래스 선택자
+button:hover 마우스가 올라가있는 요소
+button:active 마우스클릭, 엔터가 눌려있는 요소
+a:link 방문하지 않은 링크 
+a:visited 방문한 링크
+*/
+
+button:hover {
+  cursor: pointer;
+}
+a:visited {
+  color: darkcyan;
+}
+form {
+  background-image: url("000117710001.jpg") !important ;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+form {
+  text-align: center;
+}
+#box_test {
+  width: 500px;
+  height: 200px;
+  background-color: lightgreen;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding: 10px;
+  padding: 15px 30px;
+  padding: 10px 15px 20px 25px;
+  border: 2px solid black;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: red;
+  border-top-left-radius: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin: 10px;
+  margin: 15px 30px;
+  margin: 10px 15px 20px 25px;
+}
+form {
+  border-radius: 10px;
+}
+#test2 {
+  background-color: gray;
+  display: inline-block;
+}
