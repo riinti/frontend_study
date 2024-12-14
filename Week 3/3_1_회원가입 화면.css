@@ -1,0 +1,84 @@
+body {
+  background-color: #f6f0e8;
+  font-weight: bold;
+  font-style: Arial;
+  text-align: center;
+}
+form {
+  margin: 0 35%;
+  text-align: left;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.gender_button {
+  display: inline;
+  justify-content: space-between;
+  margin: 10px 0 10px;
+  width: 48%;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.gender_button:hover {
+  background-color: #f0e6dc;
+}
+.signup_button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #f2c2a0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.signup_button:hover {
+  background-color: #f2ab78;
+}
+.checkButton {
+  justify-content: space-between;
+  margin: 10px 0 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.checkButton:hover {
+  background-color: #f0e6dc;
+}
