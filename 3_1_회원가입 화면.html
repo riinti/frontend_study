@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="3_homework.css" />
+  </head>
+  <body>
+    <br />
+    <h1 class="title">회원가입</h1>
+    <br />
+    <form>
+      <div>
+        <label for="id"><b>아이디</b></label>
+        <br />
+        <!-- oninput input 태그 안의 값들이 변경 될때 -->
+        <input
+          type="text"
+          name="id"
+          id="id"
+          placeholder="영문, 숫자, 특수문자 2~20자"
+          oninput="toggleCheckButton()"
+        />
+        <button
+          type="button"
+          id="checkButton"
+          class="checkButton"
+          style="display: none"
+        >
+          중복확인
+        </button>
+      </div>
+      <br />
+      <div>
+        <label for="nickname"><b>닉네임</b></label>
+        <br />
+        <input type="text" name="nickname" placeholder="한글, 숫자 2~20자" />
+      </div>
+      <br />
+      <div>
+        <label for="pw"><b>비밀번호</b></label>
+        <br />
+        <input
+          type="password"
+          name="pw"
+          placeholder="영문, 숫자, 특수문자가 모두 들어간 8~20자"
+        />
+        <br />
+        <input
+          type="password"
+          name="pw"
+          placeholder="비밀번호를 한 번 더 입력해 주세요"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="gender"><b>성별</b></label>
+        <br />
+        <input
+          type="button"
+          name="gender"
+          value="남성"
+          class="gender_button"
+          id="a"
+        />
+        <input type="button" name="gender" value="여성" class="gender_button" />
+      </div>
+      <br />
+      <div>
+        <label for="age"><b>나이</b></label>
+        <br />
+        <select id="age" name="age"></select>
+      </div>
+      <!-- <script></script> JavaScript 코드 즉 데이터와 실행 가능한 코드를 문서에 포함할 때 -->
+      <!-- 위치는 상관이 없지만 </body>태그 앞 위치가 일반적 -->
+      <script>
+        const ageSelect = document.getElementById("age");
+        for (let i = 1; i <= 100; i++) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = i;
+          ageSelect.appendChild(option);
+        }
+
+        function toggleCheckButton() {
+          const idInput = document.getElementById("id");
+          const checkButton = document.getElementById("checkButton");
+
+          if (idInput.value) {
+            checkButton.style.display = "inline-block";
+          } else {
+            checkButton.style.display = "none";
+          }
+        }
+      </script>
+      <br />
+      <button type="submit" class="signup_button">가입</button>
+    </form>
+  </body>
+</html>
